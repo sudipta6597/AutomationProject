@@ -20,6 +20,8 @@ public class StandAloneTest {
 		driver.findElement(By.id("userPassword")).sendKeys("Dipto6597#");
 		
 		driver.findElement(By.id("login")).click();
+		driver.findElement(By.cssSelector(".fa.fa-sign-out")).click();
+		
 	}
 
 }
