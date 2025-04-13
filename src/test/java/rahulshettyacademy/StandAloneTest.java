@@ -1,8 +1,6 @@
 package rahulshettyacademy;
-
-import java.time.Duration;
 import java.util.List;
-
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,10 +17,12 @@ public class StandAloneTest {
 		String productName = "ZARA COAT 3";
 		
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/client");
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//sudiptachowdhury6597@gmail.com
 		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/client");
+		//LandingPage landingPage = new LandingPage(driver);
 		
 		driver.findElement(By.id("userEmail")).sendKeys("sudiptachowdhury6597@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Dipto6597#");
