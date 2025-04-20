@@ -32,7 +32,9 @@ public class LandingPage extends AbstractComponent {
 	
 	@FindBy(id="login")
 	WebElement submit;
-	
+	//ng-tns-c4-9 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-error
+	@FindBy(css="[class*='flyInOut'")
+	WebElement errormessage;
 	public ProductCatalogue LoginApplication(String email, String password)
 	{
 		userEmail.sendKeys(email);
@@ -42,6 +44,11 @@ public class LandingPage extends AbstractComponent {
 		return productCatalogue;
 		
 		
+	}
+	public String getErrorMessage()
+	{
+		waitForWebElementToAppear(errormessage);
+		return errormessage.getText();
 	}
 	public void GoTo()
 	{
