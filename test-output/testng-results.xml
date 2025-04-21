@@ -1,20 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="3" passed="1" failed="1" skipped="0">
+<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-21T03:37:42 IST" name="Suite" finished-at="2025-04-21T03:38:00 IST" duration-ms="17768">
+  <suite started-at="2025-04-21T14:09:51 IST" name="Suite" finished-at="2025-04-21T14:10:32 IST" duration-ms="40942">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidations.LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" name="LoginErrorValidation" class="rahulshettyacademy.ErrorValidations"/>
+        <method signature="ErrorValidations.LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" name="LoginErrorValidation" class="rahulshettyacademy.ErrorValidations"/>
       </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" name="SubmitOrder" class="rahulshettyacademy.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-04-21T03:37:42 IST" name="Error VAlidation Test" finished-at="2025-04-21T03:38:00 IST" duration-ms="17768">
-      <class name="rahulshettyacademy.ErrorValidations">
-        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:43 IST" name="LaunceApplication" finished-at="2025-04-21T03:37:48 IST" duration-ms="5194" status="PASS">
+    <test started-at="2025-04-21T14:09:51 IST" name="Submit Order" finished-at="2025-04-21T14:10:16 IST" duration-ms="24829">
+      <class name="rahulshettyacademy.SubmitOrderTest">
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:09:52 IST" name="LaunceApplication" finished-at="2025-04-21T14:10:01 IST" duration-ms="9043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunceApplication -->
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:48 IST" name="LoginErrorValidation" finished-at="2025-04-21T03:37:49 IST" duration-ms="1308" status="SKIP">
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:01 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-04-21T14:10:04 IST" duration-ms="3948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Dipto6597#, email=sudiptachowdhury6597@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:05 IST" name="tearDown" finished-at="2025-04-21T14:10:05 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:05 IST" name="LaunceApplication" finished-at="2025-04-21T14:10:08 IST" duration-ms="3179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunceApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:08 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-04-21T14:10:12 IST" duration-ms="3612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Dipto6597#, email=dip6597.sc@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:12 IST" name="tearDown" finished-at="2025-04-21T14:10:12 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:12 IST" name="LaunceApplication" finished-at="2025-04-21T14:10:15 IST" duration-ms="3178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunceApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:15 IST" name="OrderHistoryTest" finished-at="2025-04-21T14:10:16 IST" depends-on-methods="rahulshettyacademy.SubmitOrderTest.SubmitOrder" duration-ms="976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.SubmitOrderTest@73194df]" started-at="2025-04-21T14:10:16 IST" name="tearDown" finished-at="2025-04-21T14:10:16 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.SubmitOrderTest -->
+    </test> <!-- Submit Order -->
+    <test started-at="2025-04-21T14:10:17 IST" name="Error VAlidation Test" finished-at="2025-04-21T14:10:32 IST" duration-ms="15083">
+      <class name="rahulshettyacademy.ErrorValidations">
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:17 IST" name="LaunceApplication" finished-at="2025-04-21T14:10:19 IST" duration-ms="2375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunceApplication -->
+        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:19 IST" name="LoginErrorValidation" finished-at="2025-04-21T14:10:21 IST" duration-ms="1338" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
@@ -44,27 +101,33 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:49 IST" name="tearDown" finished-at="2025-04-21T03:37:49 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:21 IST" name="tearDown" finished-at="2025-04-21T14:10:21 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:49 IST" name="LaunceApplication" finished-at="2025-04-21T03:37:53 IST" duration-ms="3406" status="PASS">
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:21 IST" name="LaunceApplication" finished-at="2025-04-21T14:10:25 IST" duration-ms="3958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunceApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:53 IST" name="LoginErrorValidation" finished-at="2025-04-21T03:37:54 IST" duration-ms="1269" status="FAIL">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:25 IST" name="LoginErrorValidation" finished-at="2025-04-21T14:10:25 IST" duration-ms="733" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email or password.] but found [Incorrect email password.]]]>
@@ -94,31 +157,37 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:54 IST" name="tearDown" finished-at="2025-04-21T03:37:55 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:26 IST" name="tearDown" finished-at="2025-04-21T14:10:26 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:55 IST" name="LaunceApplication" finished-at="2025-04-21T03:37:57 IST" duration-ms="2829" status="PASS">
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:26 IST" name="LaunceApplication" finished-at="2025-04-21T14:10:29 IST" duration-ms="3187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunceApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:37:57 IST" name="ProductErrorValidation" finished-at="2025-04-21T03:38:00 IST" duration-ms="2742" status="PASS">
+        <test-method signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:29 IST" name="ProductErrorValidation" finished-at="2025-04-21T14:10:32 IST" duration-ms="2728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@34158c08]" started-at="2025-04-21T03:38:00 IST" name="tearDown" finished-at="2025-04-21T03:38:00 IST" duration-ms="72" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@7502291e]" started-at="2025-04-21T14:10:32 IST" name="tearDown" finished-at="2025-04-21T14:10:32 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

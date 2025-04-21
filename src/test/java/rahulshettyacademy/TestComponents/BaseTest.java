@@ -10,10 +10,13 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -30,17 +33,26 @@ public class BaseTest {
 	{
 		//properties class
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("D:\\Study\\AutomationProject\\SeleniumFrameworkDesign\\src\\main\\java\\rahulshettyacademy\\resourcese\\GlobalDate.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\rahulshettyacademy\\resourcese\\GlobalDate.properties");
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
-		if (browserName.equalsIgnoreCase("chrome"))
+		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("browser");
+		//String browserName = prop.getProperty("browser");
+		if (browserName.contains("chrome"))
 		{
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			if(browserName.contains("headless"))
+			{
+				options.addArguments("headless");
+			}
+			
+			driver = new ChromeDriver(options);
+			//driver.manage().window().setSize(new Dimension(1440,900)); //run in full screen
 			
 		}
 		else if (browserName.equalsIgnoreCase("firefox"))
 		{
 			//Firefox
+			driver = new FirefoxDriver();
 			
 		}
 		else if (browserName.equalsIgnoreCase("Edge"))

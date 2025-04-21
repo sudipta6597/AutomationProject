@@ -30,7 +30,7 @@ public class ErrorValidations extends BaseTest {
 
 		landingPage.LoginApplication("sudiptachowdhury6597@gmail.com", "Dipto659#");
 		
-		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 		
 	}
     @Test

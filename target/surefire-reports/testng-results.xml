@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-21T14:46:13 IST" name="Suite" finished-at="2025-04-21T14:46:19 IST" duration-ms="5640">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@73a1e9a9]" name="LoginErrorValidation" class="rahulshettyacademy.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2025-04-21T14:46:13 IST" name="Submit Order" finished-at="2025-04-21T14:46:13 IST" duration-ms="19">
+    </test> <!-- Submit Order -->
+    <test started-at="2025-04-21T14:46:13 IST" name="Error VAlidation Test" finished-at="2025-04-21T14:46:19 IST" duration-ms="5640">
+      <class name="rahulshettyacademy.ErrorValidations">
+        <test-method is-config="true" signature="LaunceApplication()[pri:0, instance:rahulshettyacademy.ErrorValidations@73a1e9a9]" started-at="2025-04-21T14:46:13 IST" name="LaunceApplication" finished-at="2025-04-21T14:46:18 IST" duration-ms="4736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunceApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.ErrorValidations@73a1e9a9]" started-at="2025-04-21T14:46:18 IST" name="LoginErrorValidation" finished-at="2025-04-21T14:46:18 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.ErrorValidations@73a1e9a9]" started-at="2025-04-21T14:46:18 IST" name="tearDown" finished-at="2025-04-21T14:46:19 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.ErrorValidations -->
+    </test> <!-- Error VAlidation Test -->
+  </suite> <!-- Suite -->
+</testng-results>
