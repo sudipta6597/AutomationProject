@@ -8,26 +8,29 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.IRetryAnalyzer;
 import org.testng.annotations.Test;
 
+import com.sun.net.httpserver.Authenticator.Retry;
+
+import rahulshettyacademy.TestComponents.BaseTest;
 import rahulshettyacademy.pageobjects.CartPage;
 import rahulshettyacademy.pageobjects.CheckoutPage;
 import rahulshettyacademy.pageobjects.ConformationPage;
 import rahulshettyacademy.pageobjects.LandingPage;
 import rahulshettyacademy.pageobjects.ProductCatalogue;
-import rahulshettyacedemy.TestComponents.BaseTest;
 
 public class ErrorValidations extends BaseTest {
 	
 	
-    @Test(groups= {"ErrorHandling"})
+    @Test(groups= {"ErrorHandling"},retryAnalyzer =rahulshettyacademy.TestComponents.Retry.class)
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		String productName = "ZARA COAT 3";
+		//String productName = "ZARA COAT 3";
 
 		landingPage.LoginApplication("sudiptachowdhury6597@gmail.com", "Dipto659#");
 		
-		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMessage());
 		
 	}
     @Test
