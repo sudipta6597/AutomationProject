@@ -16,16 +16,4 @@
       </class> <!-- rahulshettyacademy.SubmitOrderTest -->
     </classes>
   </test> <!-- Submit Order(failed) -->
-  <test thread-count="5" name="Error VAlidation Test(failed)" verbose="0">
-    <classes>
-      <class name="rahulshettyacademy.ErrorValidations">
-        <methods>
-          <include name="LaunceApplication"/>
-          <include name="LoginErrorValidation"/>
-          <include name="tearDown"/>
-          <include name="ProductErrorValidation"/>
-        </methods>
-      </class> <!-- rahulshettyacademy.ErrorValidations -->
-    </classes>
-  </test> <!-- Error VAlidation Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
